@@ -14,6 +14,7 @@ body {
 .interface {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 0 4%;
 }
 
 header {
@@ -75,6 +76,99 @@ header.rolar .logo-branca{
 header .menu-desktop nav ul {
   list-style-type: none;
 }
+
+/* menu mobile */
+
+.btn-menu-mob{
+  display: none;
+  position: relative;
+  z-index: 6;
+}
+
+.btn-menu-mob div{
+  background-color: white;
+  height: 3px;
+  margin: 10px 0;
+  transition: .2s ease;
+}
+
+.btn-menu-mob .line-menumob-1{
+  width: 30px;
+}
+
+.btn-menu-mob .line-menumob-2{
+  width: 20px;
+}
+
+
+header.rolar .btn-menu-mob div{
+  background-color: #000;
+}
+
+header .btn-menu-mob .line-menumob-1.ativo1{
+  transform: rotate(45deg) translate(31%);
+  background-color: #fff;
+}
+header .btn-menu-mob .line-menumob-2.ativo2{
+  transform: rotate(-45deg) translate(31%);
+  background-color: #fff;
+  width: 30px;
+}
+
+/* menu mobile estilo */
+
+.menu-mobile {
+  width: 0;
+  height: 0;
+  background-color: #0e0e0e;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  overflow: hidden;
+  transition: .4s;
+}
+
+.menu-mobile nav {
+  width: 100%;
+}
+
+.menu-mobile nav ul{
+  list-style-type: none;
+}
+
+.menu-mobile a{
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+  padding: 20px 0;
+  display: block;
+  transition: .3s;
+}
+
+.menu-mobile nav a:hover{
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0px 0px 15px #ffffff6c;
+}
+
+.menu-mobile.abrir{
+  width: 100%;
+  height: 100vh;
+}
+
+body.no-overflow{
+  overflow: hidden;
+}
+
+
+
+
 
 .menu-desktop nav ul li {
   display: inline-block;
@@ -247,7 +341,6 @@ section.contato {
 
 .acampar {
   height: 37.5em;
-
   background-image: url(../images/pexels-lureofadventure-19013098.jpg);
   background-position: center;
   background-size: cover;

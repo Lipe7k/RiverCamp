@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RiverCamp</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" media="screen">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -12,6 +13,7 @@
     <link rel="shortcut icon" href="../images/barraca-de-acampamento (1).png" type="image/x-icon">
 
     <script src="js/main.js" defer></script>
+    <script src="js/btn-menu-mob.js" defer></script>
   </head>
   <body>
     <header id="header">
@@ -39,7 +41,25 @@
             <button>Contato</button>
           </a>
         </section>
+
+        <div class="btn-menu-mob" id="btn-menu-mob">
+          <div class="line-menumob-1"></div>
+          <div class="line-menumob-2"></div>
+        </div>
+  
+        <section class="menu-mobile" id="menu-mobile">
+          <nav>
+            <ul>
+              <li><a href="aviso.html">Início</a></li>
+              <li><a href="aviso.html">Destinos</a></li>
+              <li><a href="aviso.html">Reservas</a></li>
+              <li><a href="aviso.html">Passagens</a></li>
+            </ul>
+          </nav>
+        </section>
+
       </div>
+
     </header>
 
     <section class="page-inicial">
@@ -76,11 +96,11 @@
         </article>
 
         <article class="content">
-          <div class="img-itens">
+          <div class="img-itens item-1">
             <img src="images/camping.png" alt="guias" />
           </div>
 
-          <div class="txt-itens">
+          <div class="txt-itens item-2">
             <h3><span>Os</span> melhores <br />lugares</h3>
             <p>
               Descubra os melhores destinos para acampamento, com paisagens
